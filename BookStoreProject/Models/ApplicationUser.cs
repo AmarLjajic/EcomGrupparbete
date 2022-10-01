@@ -13,8 +13,7 @@ namespace BookStoreProject.Models
         public string? City { get; set; }
         public string? State { get; set; }
         public string? PostalCode { get; set; }
-        public int? ComapnyId { get; set; }
-        [ForeignKey("CompanyId")]
+        public int? CompanyId { get; set; }
         [ValidateNever]
         public Company Company { get; set; }
     }

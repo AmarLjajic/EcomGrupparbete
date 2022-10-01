@@ -168,7 +168,7 @@ namespace BookStoreProject.Areas.Identity.Pages.Account
                 user.PhoneNumber = Input.PhoneNumber;
                 if(Input.Role == SD.Role_User_Comp)
                 {
-                    user.ComapnyId = Input.CompanyId;
+                    user.CompanyId = Input.CompanyId;
                 }
 
                 var result = await _userManager.CreateAsync(user, Input.Password);
